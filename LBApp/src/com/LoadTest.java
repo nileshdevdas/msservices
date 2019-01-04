@@ -12,7 +12,6 @@ public class LoadTest {
 
 		ExecutorService service = Executors.newFixedThreadPool(1000);
 		for (int b = 0; b < 100; b++) {
-
 			for (int i = 0; i < 1000; i++) {
 				service.execute(new Runnable() {
 					@Override
